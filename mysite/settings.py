@@ -71,7 +71,9 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -93,28 +95,18 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # For development, you can use SQLite
 # For production, use MySQL as specified in the technical requirements
 
-# Development (SQLite) - for local development without database connection issues
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#         'OPTIONS': {
-#             'charset': 'utf8mb4',
-#         },
-#     }
-# }
-
 # Production (MySQL) - Uncomment for production deployment
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'buki-baki-baza',
-        'USER': 'buki-baki-admin',
-        'PASSWORD': '$%>K|RM;&-Ye^lV$',
-        'HOST': '178.254.23.217',
+        'USER': 'buki-baki-b-usr',
+        'PASSWORD': '3LbwEGIN2cXDD6L8',
+        'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {
-            'charset': 'utf8mb4',
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            'charset': 'utf8mb4'
         },
     }
 }
@@ -169,7 +161,9 @@ LOCALE_PATHS = [
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = '/static/'
-# Removed static files configuration as frontend assets are no longer needed
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'assets'),
+]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -1,51 +1,32 @@
+from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.translation import gettext as _
 import json
 
-@csrf_exempt
 def index(request):
     """
-    API endpoint for homepage data
+    Serve the main index page
     """
-    # Return JSON response instead of rendering template
-    data = {
-        'message': 'Kids Education Portal API',
-        'status': 'success'
-    }
-    return JsonResponse(data)
+    return render(request, 'index.html')
 
-@csrf_exempt
 def blog(request):
     """
-    API endpoint for blog data
+    Serve the blog page
     """
-    data = {
-        'message': 'Blog API endpoint',
-        'status': 'success'
-    }
-    return JsonResponse(data)
+    return render(request, 'blog.html')
 
-@csrf_exempt
 def post(request):
     """
-    API endpoint for post data
+    Serve the post page
     """
-    data = {
-        'message': 'Post API endpoint',
-        'status': 'success'
-    }
-    return JsonResponse(data)
+    return render(request, 'post.html')
 
 def error_404(request, exception):
     """
-    API error handler
+    Error handler for 404
     """
-    data = {
-        'error': 'Not found',
-        'status': 404
-    }
-    return JsonResponse(data, status=404)
+    return render(request, '404.html', status=404)
 
 @csrf_exempt
 def signup(request):
@@ -60,6 +41,8 @@ def signup(request):
         }
         return JsonResponse(data)
     else:
+        # For GET requests, you might want to serve a signup page
+        # For now, we'll return a simple JSON response
         data = {
             'message': 'Signup API endpoint - GET request',
             'status': 'success'
