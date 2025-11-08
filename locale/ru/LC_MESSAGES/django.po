@@ -1,0 +1,131 @@
+# Russian translation for Django admin
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ru\n"
+
+msgid "Django administration"
+msgstr "Администрирование Django"
+
+msgid "Log in"
+msgstr "Войти"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Forgotten your password or username?"
+msgstr "Забыли пароль или имя пользователя?"
+
+msgid "Log in again"
+msgstr "Войти снова"
+
+msgid "Password change"
+msgstr "Изменение пароля"
+
+msgid "Password change successful"
+msgstr "Пароль успешно изменен"
+
+msgid "Your password was changed."
+msgstr "Ваш пароль был изменен."
+
+msgid "Home"
+msgstr "Главная"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Change"
+msgstr "Изменить"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Action"
+msgstr "Действие"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "User"
+msgstr "Пользователь"
+
+msgid "Content"
+msgstr "Содержание"
+
+msgid "None available"
+msgstr "Нет доступных"
+
+msgid "Unknown content"
+msgstr "Неизвестное содержание"
+
+msgid "Objects"
+msgstr "Объекты"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Save and add another"
+msgstr "Сохранить и добавить другой"
+
+msgid "Save and continue editing"
+msgstr "Сохранить и продолжить редактирование"
+
+msgid "Save as new"
+msgstr "Сохранить как новый"
+
+msgid "Delete?"
+msgstr "Удалить?"
+
+msgid "Thanks for spending some quality time with the Web site today."
+msgstr "Спасибо, что провели время на сайте."
+
+msgid "Log out"
+msgstr "Выйти"
+
+msgid "Documentation"
+msgstr "Документация"
+
+msgid "Django site admin"
+msgstr "Администрирование сайта Django"
+
+msgid "Django administration"
+msgstr "Администрирование Django"
+
+msgid "Welcome,"
+msgstr "Добро пожаловать,"
+
+msgid "View site"
+msgstr "Просмотр сайта"
+
+msgid "Change password"
+msgstr "Изменить пароль"
+
+msgid "Site administration"
+msgstr "Администрирование сайта"
+
+msgid "Date/time"
+msgstr "Дата/время"
+
+msgid "User"
+msgstr "Пользователь"
+
+msgid "Action"
+msgstr "Действие"
+
+msgid "entry"
+msgstr "запись"
+
+msgid "entries"
+msgstr "записи"
+
+msgid "Addition"
+msgstr "Добавление"
+
+msgid "Change"
+msgstr "Изменение"
+
+msgid "Deletion"
+msgstr "Удаление"
