@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-r_)a8i8u3ex6zd-njiy*7bz8yo87-sntbx1@&bi!+)ux4%a1+d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['178.254.18.46', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -100,7 +100,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'buki-baki-baza',
-        'USER': 'buki-baki-b-usr',
+        'USER': 'buki-baki-b_usr',
         'PASSWORD': '3LbwEGIN2cXDD6L8',
         'HOST': 'localhost',
         'PORT': '3306',
