@@ -31,8 +31,8 @@ class VideoAdmin(admin.ModelAdmin):
             'fields': ('title', 'description', 'category')
         }),
         ('Video File', {
-            'fields': ('file', 'preview'),
-            'description': 'Upload MP4 video file and preview image'
+            'fields': ('file', 'preview', 'large_preview'),
+            'description': 'Upload MP4 video file, preview image, and optional large preview file'
         }),
         ('Series Options', {
             'fields': ('is_series', 'series_group', 'order'),

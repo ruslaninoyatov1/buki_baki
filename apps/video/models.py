@@ -17,6 +17,12 @@ class Video(models.Model):
     title = models.CharField(max_length=200)
     description = RichTextField(blank=True, help_text="Video description with rich text formatting")
     preview = models.ImageField(upload_to='videos/previews/')
+    large_preview = models.FileField(
+        upload_to='videos/large_previews/', 
+        blank=True, 
+        null=True,
+        help_text="Large preview file (MP4 or other video format)"
+    )
     file = models.FileField(upload_to='videos/files/')  # MP4 file required
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     is_series = models.BooleanField(default=False, help_text="Check if this video is part of a series")
