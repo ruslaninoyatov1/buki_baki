@@ -15,13 +15,13 @@ class CategoryAdminForm(forms.ModelForm):
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     form = CategoryAdminForm
-    list_display = ('title', 'slug', 'is_free')
-    list_filter = ('is_free',)
+    list_display = ('title', 'category_type', 'slug', 'is_free')
+    list_filter = ('category_type', 'is_free',)
     search_fields = ('title', 'slug')
     prepopulated_fields = {'slug': ('title',)}
     fieldsets = (
         ('Basic Information', {
-            'fields': ('title', 'description', 'slug', 'is_free'),
+            'fields': ('title', 'description', 'category_type', 'slug', 'is_free'),
             'description': 'Mark category as "Free" to make it accessible without subscription'
         }),
     )
