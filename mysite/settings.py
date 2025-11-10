@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-r_)a8i8u3ex6zd-njiy*7bz8yo87-sntbx1@&bi!+)ux4%a1+d'
 DEBUG = False
 
-ALLOWED_HOSTS = ['178.254.18.46', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['buki-baki.com', 'www.buki-baki.com', '178.254.18.46', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
@@ -65,20 +65,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-
-# For development, you can use SQLite
-# For production, use MySQL as specified in the technical requirements
-
-# Production (MySQL) - Uncomment for production deployment
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'buki-baki-baza',
-        'USER': 'buki-baki-admin',
-        'PASSWORD': '$%>K|RM;&-Ye^lV$',
-        'HOST': '178.254.18.46',
+        'USER': 'buki-baki-b_usr',
+        'PASSWORD': '3LbwEGIN2cXDD6L8',
+        'HOST': 'localhost',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
