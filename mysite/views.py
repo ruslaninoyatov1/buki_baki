@@ -3,12 +3,14 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.translation import gettext as _
 import json
+from apps.site_content.views import get_site_content
 
 def index(request):
     """
     Serve the main index page
     """
-    return render(request, 'index.html')
+    site_content = get_site_content()
+    return render(request, 'index.html', {'site_content': site_content})
 
 def blog(request):
     """

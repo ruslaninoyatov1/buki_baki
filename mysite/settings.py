@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'apps.subscription',
     'apps.feedback',
     'apps.categories',
+    'apps.site_content',
     'apps.api',
     'ckeditor',
     'ckeditor_uploader',
